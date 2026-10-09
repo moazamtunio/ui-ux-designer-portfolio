@@ -4,13 +4,9 @@ A responsive, dark-themed personal portfolio for a **UI/UX Designer**, built wit
 
 ![Portfolio Preview](./images/FigmaDesign.png)
 
-> 📌 Add a full-page screenshot of your site at `images/preview.png`.
-
 ## 🔗 Live Demo
 
 [View the live site](https://your-username.github.io/your-repo-name/)
-
-> Replace with your GitHub Pages URL after deploying.
 
 ---
 
@@ -65,8 +61,8 @@ Portfolio/
 ### Run locally
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/moazamtunio/ui-ux-designer-portfolio.git
+cd ui-ux-designer-portfolio
 ```
 
 Then open `index.html` in your browser (or use the **Live Server** extension in VS Code). No installation needed. An internet connection is required for the Font Awesome icons.
