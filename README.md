@@ -6,7 +6,7 @@ A responsive, dark-themed personal portfolio for a **UI/UX Designer**, built wit
 
 ## 🔗 Live Demo
 
-[View the live site](https://your-username.github.io/your-repo-name/)
+[View the live site](https://ui-ux-desinger-portfolio.netlify.app/)
 
 ---
 
