@@ -646,10 +646,11 @@ header .mobile .menu ul .hireMe {
 }
 
 .projects .sectionHeaderBox .projectsCategoryCon {
-  display: grid;
-  grid-template-columns: repeat(5, 213px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 30px;
-  column-gap: 20px;
+  gap: 20px;
 }
 .projects .sectionHeaderBox .projectsCategoryCon span {
   padding: 16px 36px;
@@ -680,18 +681,14 @@ header .mobile .menu ul .hireMe {
     height: 392px;
     width: 325px;
   }
-  .projects .sectionHeaderBox .projectsCategoryCon {
-    display: grid;
-    grid-template-columns: repeat(5, 172px);
-  }
 }
 @media screen and (max-width: 768px) {
   .projects .projectsContainer {
     grid-template-columns: repeat(2, 1fr);
   }
-  .projects .sectionHeaderBox .projectsCategoryCon {
-    grid-template-columns: repeat(3, 213px);
-    row-gap: 15px;
+  .projects .sectionHeaderBox .projectsCategoryCon span {
+    padding: 16px 20px;
+    font-size: 0.9rem;
   }
 }
 
@@ -705,15 +702,30 @@ header .mobile .menu ul .hireMe {
   }
 
   .projects .sectionHeaderBox .projectsCategoryCon {
-    grid-template-columns: repeat(2, 160px);
-    row-gap: 15px;
-    margin-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .projects .sectionHeaderBox .projectsCategoryCon span {
+    font-size: 0.7rem;
+    padding: 15px 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .projects .sectionHeaderBox .projectsCategoryCon {
+    margin-left: -5px;
+    grid-template-columns: repeat(3, 0.8fr);
+  }
+  .projects .sectionHeaderBox .projectsCategoryCon span {
+    padding: 13px 10px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .projects .sectionHeaderBox .projectsCategoryCon {
-    margin-left: 48px;
+    grid-template-columns: repeat(3, 0.9fr);
+    margin-left: 25px;
   }
 
   .projects .projectsContainer {
@@ -730,7 +742,7 @@ header .mobile .menu ul .hireMe {
 .contactMe .contactForm {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 25px;
+  row-gap: 15px;
   padding: 50px 110px;
   position: relative;
 }
@@ -741,6 +753,11 @@ header .mobile .menu ul .hireMe {
   flex-direction: column;
   gap: 15px;
   align-items: start;
+}
+
+.contactMe .contactForm .input-feild label {
+  color: var(--orange);
+  opacity: 0.9;
 }
 
 .contactMe .contactForm input,
@@ -778,7 +795,7 @@ header .mobile .menu ul .hireMe {
   border-radius: 10px;
   position: absolute;
   right: 14vw;
-  top: 495px;
+  bottom: 0;
 }
 
 @media screen and (max-width: 1024px) {
