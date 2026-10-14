@@ -19,11 +19,38 @@
       <nav class="desktop">
         <h2 class="logo">LOGO</h2>
         <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact me</a></li>
+          <li>
+            <a
+              href="#hero"
+              class="active"
+              aria-hidden="true"
+              aria-label="Home Section"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#services" aria-hidden="true" aria-label="Service Section"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#aboutMe" aria-hidden="true" aria-label="About me Section"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a href="#projects" aria-hidden="true" aria-label="Projects Section"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contactMe"
+              aria-hidden="true"
+              aria-label="Contact Me Section"
+              >Contact me</a
+            >
+          </li>
         </ul>
         <button class="hireMe">Hire Me</button>
       </nav>
@@ -35,11 +62,47 @@
 
         <div class="menu">
           <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact me</a></li>
+            <li>
+              <a
+                href="#hero"
+                class="active"
+                aria-hidden="true"
+                aria-label="Home Section"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                aria-hidden="true"
+                aria-label="Service Section"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#aboutMe"
+                aria-hidden="true"
+                aria-label="About me Section"
+                >About me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                aria-hidden="true"
+                aria-label="Projects Section"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contactMe"
+                aria-hidden="true"
+                aria-label="Contact Me Section"
+                >Contact me</a
+              >
+            </li>
             <button class="hireMe">Hire Me</button>
           </ul>
         </div>
@@ -48,7 +111,7 @@
 
     <main>
       <!-- Hero Section Start -->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="heroTextBox">
           <div class="intro">
             <span>Hi I am</span> <span class="name">Mahmood Fazile</span>
@@ -56,22 +119,25 @@
           <h1 class="skill">UI/UX designer</h1>
 
           <div class="socialMediaIcons">
-            <a href="">
+            <a href="http://instagram.com/" aria-label="Instagram Profile Link">
               <span class="socialIcon">
                 <i class="fa-brands fa-instagram" style="color: #fff1e6"></i>
               </span>
             </a>
-            <a href="">
+            <a href="http://linkedin.com/" aria-label="Linkdin profile link">
               <span class="socialIcon">
                 <i class="fa-brands fa-linkedin" style="color: #fff1e6"></i>
               </span>
             </a>
-            <a href="">
+            <a
+              href="https://ui-ux-desinger-portfolio.netlify.app/"
+              aria-label="Website link"
+            >
               <span class="socialIcon">
                 <i class="fa-solid fa-globe" style="color: #fff1e6"></i>
               </span>
             </a>
-            <a href="">
+            <a href="http://github.com/" aria-label="Github Profile Link">
               <span class="socialIcon">
                 <i class="fa-brands fa-github" style="color: #fff1e6"></i>
               </span>
@@ -99,7 +165,7 @@
       </section>
 
       <!-- Services Section Start -->
-      <section class="services">
+      <section class="services" id="services">
         <div class="sectionHeaderBox">
           <h2 class="sectionHeading">Services</h2>
           <p class="sectionDesc">
@@ -179,7 +245,7 @@
       </section>
 
       <!-- About Me Section Start -->
-      <section class="aboutMe">
+      <section class="aboutMe" id="aboutMe">
         <div class="sectionHeaderBox">
           <h2 class="sectionHeading">About Me</h2>
           <p class="sectionDesc">
@@ -262,7 +328,7 @@
       </section>
 
       <!-- Projects Section start -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="sectionHeaderBox">
           <h2 class="sectionHeading">Projects</h2>
           <div class="projectsCategoryCon">
@@ -288,7 +354,7 @@
       </section>
 
       <!-- Contact Me Section Start -->
-      <section class="contactMe">
+      <section class="contactMe" id="contactMe">
         <div class="sectionHeaderBox">
           <h2 class="sectionHeading">Contact Me</h2>
           <p class="sectionDesc">
@@ -296,16 +362,38 @@
           </p>
         </div>
         <form class="contactForm">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Phone" />
-          <select name="Service Of Internet">
-            <option value="Service Of Internet" selected>
-              Service Of Internet
-            </option>
-          </select>
-          <input type="date" placeholder="date" />
-          <textarea placeholder="Projects Details..." rows="8"></textarea>
+          <div class="input-feild">
+            <label for="name">*Name</label>
+            <input type="text" placeholder="Name" name="name" />
+          </div>
+          <div class="input-feild">
+            <label for="email">*Email</label>
+            <input type="email" placeholder="Email" name="email" />
+          </div>
+          <div class="input-feild">
+            <label for="phone">*Phone</label>
+            <input type="tel" placeholder="Phone" name="phone" />
+          </div>
+          <div class="input-feild">
+            <label for="Service Of Internet">*Services</label>
+            <select name="Service Of Internet">
+              <option value="Service Of Internet" selected>
+                Service Of Internet
+              </option>
+            </select>
+          </div>
+          <div class="input-feild">
+            <label for="date">*Date</label>
+            <input type="date" placeholder="date" name="date" />
+          </div>
+          <div class="input-feild">
+            <label for="details">*Description</label>
+            <textarea
+              placeholder="Projects Details..."
+              rows="8"
+              name="details"
+            ></textarea>
+          </div>
           <button type="submit" class="send">Send</button>
         </form>
       </section>
@@ -315,29 +403,59 @@
     <footer>
       <h2 class="logo">LOGO</h2>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact me</a></li>
+        <li>
+          <a
+            href="#hero"
+            class="active"
+            aria-hidden="true"
+            aria-label="Home Section"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#services" aria-hidden="true" aria-label="Service Section"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="#aboutMe" aria-hidden="true" aria-label="About me Section"
+            >About me</a
+          >
+        </li>
+        <li>
+          <a href="#projects" aria-hidden="true" aria-label="Projects Section"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contactMe"
+            aria-hidden="true"
+            aria-label="Contact Me Section"
+            >Contact me</a
+          >
+        </li>
       </ul>
       <div class="socialMediaIcons">
-        <a href="">
+        <a href="http://instagram.com/" aria-label="Instagram Profile Link">
           <span class="socialIcon">
             <i class="fa-brands fa-instagram" style="color: #fff1e6"></i>
           </span>
         </a>
-        <a href="">
+        <a href="http://linkedin.com/" aria-label="Linkdin profile link">
           <span class="socialIcon">
             <i class="fa-brands fa-linkedin" style="color: #fff1e6"></i>
           </span>
         </a>
-        <a href="">
+        <a
+          href="https://ui-ux-desinger-portfolio.netlify.app/"
+          aria-label="Website link"
+        >
           <span class="socialIcon">
             <i class="fa-solid fa-globe" style="color: #fff1e6"></i>
           </span>
         </a>
-        <a href="">
+        <a href="http://github.com/" aria-label="Github Profile Link">
           <span class="socialIcon">
             <i class="fa-brands fa-github" style="color: #fff1e6"></i>
           </span>

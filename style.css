@@ -15,6 +15,10 @@
   --graylight: #70707025;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--body);
   color: var(--light);
@@ -92,6 +96,7 @@ header .mobile .menu {
   background-color: var(--body);
   border-top: 1px solid var(--gray);
   transition: 0.5s ease-in;
+  z-index: 5;
 }
 
 header .mobile .menu ul {
@@ -729,6 +734,14 @@ header .mobile .menu ul .hireMe {
   position: relative;
 }
 
+.contactMe .contactForm .input-feild {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+}
+
 .contactMe .contactForm input,
 .contactMe .contactForm select {
   height: 47px;
@@ -763,8 +776,8 @@ header .mobile .menu ul .hireMe {
   background-color: transparent;
   border-radius: 10px;
   position: absolute;
-  right: 160px;
-  top: 400px;
+  right: 14vw;
+  top: 495px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -786,8 +799,8 @@ header .mobile .menu ul .hireMe {
     padding-left: 50px;
   }
   .contactMe .contactForm .send {
-    right: 100px;
-    top: 610px;
+    right: 13vw;
+    top: 820px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -801,8 +814,7 @@ header .mobile .menu ul .hireMe {
     padding-left: 20px;
   }
   .contactMe .contactForm .send {
-    right: 3vw;
-    top: 601px;
+    right: 6vw;
   }
 }
 @media screen and (max-width: 375px) {
@@ -814,10 +826,6 @@ header .mobile .menu ul .hireMe {
 
   .contactMe .contactForm {
     padding-left: 20px;
-  }
-  .contactMe .contactForm .send {
-    right: 20px;
-    top: 590px;
   }
 }
 
