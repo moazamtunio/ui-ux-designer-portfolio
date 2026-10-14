@@ -568,7 +568,7 @@ header .mobile .menu ul .hireMe {
 }
 
 .aboutMe .skillsContainer .skillCard .skillName {
-  color: var(--gray);
+  color: var(--light);
   font-size: 20px;
   font-weight: 500;
 }
@@ -906,14 +906,14 @@ footer .footContactInfo {
 footer .footContactInfo span {
   font-size: 18px;
   font-weight: 600;
-  color: var(--gray);
+  color: var(--lightGrayHover);
 }
 
 footer .designBy {
   font-size: 17px;
   font-weight: 500;
-  color: var(--gray);
-  border-top: 1px solid var(--gray);
+  color: var(--lightGray);
+  border-top: 1px solid var(--lightGray);
   padding: 18px 50px;
 }
 
